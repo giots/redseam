@@ -26,7 +26,7 @@
             <div class="title">RedSeam Clothing </div>
         </div>
         <div class='right_part'>
-            <div class="avatar"><img src='/assets/avatar.jpg'></div>
+            <div class="avatar"></div>
             <div class="login_title"><a href=''>login</a> </div>
         </div>
     </header>
