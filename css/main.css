@@ -55,34 +55,58 @@ table {
      Actual Styling 
 ***********************/
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 100px;
-    gap: 10px;
+/*  HEADER */
 
-     background-color: #efefef;
-     
-    width: 1920px;
-    height: 80px;
-    left: 20px;
-    top: 20px;
-}
+        header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
 
-header .logo img {
-    width: 24px;
-}
+            padding: 10px 100px;
+            gap: 10px;
 
-header .title {
+            background-color: #efefef;
+            
+            /*width: 1920px;*/
+            height: 80px;
+            left: 20px;
+            top: 20px;
+        }
 
-    font-weight: 600;
-    font-size: 16px;
+        header .left_part, header .right_part  {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+        }
 
-}
+        header .logo img {
+            width: 36px;
+            height: 36px;
+        }
+
+        header .title {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        header .avatar img {
+            width: 24px;
+            height: 24px;
+        }
 
 
+/*  FOOTER */
+
+
+
+
+/*  PAGE */
 
 
 
