@@ -83,6 +83,7 @@ table {
             justify-content: flex-start;
             align-items: center;
             align-content: center;
+            gap: 5px;
         }
 
         header .logo img {
@@ -98,6 +99,7 @@ table {
         header .avatar img {
             width: 24px;
             height: 24px;
+            border-radius: 50%;
         }
 
 
