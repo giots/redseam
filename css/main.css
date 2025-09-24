@@ -26,6 +26,7 @@ time, mark, audio, video {
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* HTML5 display-role reset for older browsers */
 
 article, aside, details, figcaption, figure, 
@@ -88,18 +89,18 @@ table {
 
 
         header .logo img {
-            width: 36px;
-            height: 36px;
+            width: 1.5rem;
+            height: 1.5rem;
         }
 
         header .title {
             font-weight: 600;
-            font-size: 16px;
+            font-size: 1rem;
         }
 
         header .avatar {
-            width: 40px;
-            height: 40px;
+            width: 2.5rem;
+            height: 2.5rem;
             background: url("/assets/avatar.jpg");
             background-size: cover;
             border-radius: 50%;
@@ -108,10 +109,23 @@ table {
 
         }
 
-        .card_icon {
+        header .card_icon {
             margin-right: 20px;
         }
 
+        header .login_title {
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        header .login_title a {
+            text-decoration: none; 
+            color: #000;
+        }
+
+         header .login_title a:hover {
+            text-decoration: none;
+            text-decoration:underline;
+        }
 
 /*  FOOTER */
 

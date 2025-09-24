@@ -28,8 +28,9 @@
         <div class='right_part'>
             <div class="card_icon"><img src='/assets/card.svg'></div>
             <div class="avatar"></div>
-            <div class="drp_down_arrow"><img src='/assets/arrow_down.svg'></div>
-            <div class="login_title"><a href=''>login</a> </div>
+            <div class="drop_down_arrow"><img src='/assets/arrow_down.svg'></div>
+            <div class="login_icon"><img src='/assets/login_icon.svg'></div>
+            <div class="login_title"><a href='#'>Log in</a> </div>
         </div>
     </header>
  
