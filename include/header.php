@@ -20,12 +20,12 @@
     <body>
 
 
-    <header class='header'>
+    <header class='flex'>
         <div class='left_part'> 
             <div class="logo"><img src='/assets/logo.svg'></div>
             <div class="title">RedSeam Clothing </div>
         </div>
-        <div class='right_part'>
+        <div class='right_part t_0_75'>
             <div class="card_icon"><img src='/assets/card.svg'></div>
             <div class="avatar"></div>
             <div class="drop_down_arrow"><img src='/assets/arrow_down.svg'></div>

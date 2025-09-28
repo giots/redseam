@@ -56,87 +56,172 @@ table {
      Actual Styling 
 ***********************/
 
+
+.t_0_75 {
+    font-size: 0.75rem;
+}
+
+.gap_25 {
+    gap: 25px;
+}
+
 /*  HEADER */
 
-        header {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-items: center;
-            align-content: center;
 
-            padding: 10px 100px;
-            gap: 10px;
-
-            background-color: #efefef;
-            
+    header {
             /*width: 1920px;*/
-            height: 80px;
-            left: 20px;
-            top: 20px;
-        }
+        padding: 10px 100px;
+        height: 80px;
+        left: 20px;
+        top: 20px;
+    }
 
-        header .left_part, header .right_part  {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items: center;
-            align-content: center;
-            gap: 5px;
-        }
+    .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+
+        gap: 10px;
+    }
+
+    .flex .left_part, .flex .right_part  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+
+        gap: 5px;
+    }
 
 
-        header .logo img {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
+    .flex .logo img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 
-        header .title {
-            font-weight: 600;
-            font-size: 1rem;
-        }
+    .flex .title {
+        font-weight: 600;
+        font-size: 1rem;
+    }
 
-        header .avatar {
-            width: 2.5rem;
-            height: 2.5rem;
-            background: url("/assets/avatar.jpg");
-            background-size: cover;
-            border-radius: 50%;
-            background-position-x: center;
-            background-position-y: center;
+    .flex .avatar {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url("/assets/avatar.jpg");
+        background-size: cover;
+        border-radius: 50%;
+        background-position-x: center;
+        background-position-y: center;
 
-        }
+    }
 
-        header .card_icon {
-            margin-right: 20px;
-        }
+    .flex .card_icon {
+        margin-right: 20px;
+    }
 
-        header .login_title {
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
-        header .login_title a {
-            text-decoration: none; 
-            color: #000;
-        }
 
-         header .login_title a:hover {
-            text-decoration: none;
-            text-decoration:underline;
-        }
+    .flex .login_title a {
+        text-decoration: none; 
+        color: #000;
+    }
+
+    .flex .login_title a:hover {
+        text-decoration: none;
+        text-decoration:underline;
+    }
 
 /*  FOOTER */
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+}
 
 
 
+/*  PAGE Main Content */
 
-/*  PAGE */
+    .main {
+        text-align: center;
+        padding: 72px 100px 10px ;
+        /*background-color: #ff0;*/
+    }
+
+    .page_title {
+        font-size: 2.625rem;
+        font-weight: 600;
+    }
+
+    .main  .flex .left_part, .main .flex .right_part  {
+        gap: 30px;
+    }
 
 
+    /* Products List */
+
+    .products_list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: flex-start;
+
+        gap: 25px;
+    }
+
+    .products_list .product {
+        width: calc(25% - 20px);
+        height: 100%;
+        text-align: left;
+        margin-top: 1rem;
+       
+    }
+
+    .products_list .product .cover_image {
+        width:100%; 
+        height: 565px;
+        background-size: cover;
+        background-color: #efefef;
+        border: 1px solid #efefef;
+        border-radius: 10px;
+    }
+
+    .product_list_description {
+        margin-top: 7px;
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: left;
+        align-content: flex-start;
+        gap: 2px;
+    }
 
 
+    .meta {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: baseline;
+        align-content: stretch;
+        gap: 1rem;
+    }
 
+    .meta div {
+        width: 2rem;
+    }
 
-
+    .meta div.active, .meta div:hover {
+        color: #FF4000;    
+        border: 1px #FF4000 solid; 
+        border-radius: 5px;
+    }
