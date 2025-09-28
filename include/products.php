@@ -1,8 +1,28 @@
 <?php  
 
     $products_url = $request;
-    echo $products_url;
-    $products = json_decode( make_get_request( $products_url ), false ); 
+
+    $filters_data = array();
+
+    # check filters and generate relevant api request
+    if ( isset($_GET['page']) && (int)$_GET['page'] > 0 ) 
+            $filters_data ['page'] = (int)$_GET['page'];
+
+    if ( isset($_GET['sort']) && in_array($_GET['sort'], array('-price','price','-created_at','created_at')) ) 
+            $filters_data ['sort'] = $_GET['sort'];
+    
+    if ( isset($_GET['price_from']) && $_GET['price_from'] > 0 ) 
+            $filters_data ['price_from'] = (double)$_GET['price_from'];
+
+    if ( isset($_GET['price_to']) && $_GET['price_to'] > 0 ) 
+            $filters_data ['price_to'] = (double)$_GET['price_to'];
+    
+    $f_String = '';
+    foreach( $filters_data as $k=>$f ) {
+        $f_String .= "&".$k.'='.$f;
+    }
+
+    $products = json_decode( make_get_request( $products_url."?".$f_String ), false ); 
 
 ?>
 
@@ -36,11 +56,13 @@
 
 
     <div class='meta'>
-          <?php foreach($products->meta->links as $l) { ?>
+          <?php foreach($products->meta->links as $l) { 
+            
+            if ($l->url) { ?>
             <a <?=($l->active?'class="active"':'')?> href="<?=str_replace(REDSEAM_API,"",$l->url)?> ">
                     <?=$l->label?>
             </a>
-        <?php } ?>
+        <?php  } } ?>
     </div>
 
 

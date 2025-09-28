@@ -75,6 +75,10 @@ table {
         left: 20px;
         top: 20px;
     }
+    header a, header a:hover, header a:link  {
+        text-decoration: none;
+        color: #000;
+    }
 
     .flex {
         display: flex;
@@ -137,6 +141,7 @@ table {
 
 /*  FOOTER */
 footer {
+    margin-top: 2rem;
     text-align: center;
     font-size: 0.8rem;
 }
@@ -214,12 +219,16 @@ footer {
         align-items: baseline;
         align-content: stretch;
         gap: 1rem;
+        margin-top: 3rem;
     }
 
     .meta a {
         white-space: nowrap;
         min-width: 2rem;
         border: 1px #ff400000 solid;
+        text-decoration: none;
+        color: #212B36;
+        padding:5px;
     }
 
     .meta a.active, .meta a:hover {

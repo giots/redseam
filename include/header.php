@@ -21,10 +21,12 @@
 
 
     <header class='flex'>
+        <a href='/'>
         <div class='left_part'> 
             <div class="logo"><img src='/assets/logo.svg'></div>
             <div class="title">RedSeam Clothing </div>
         </div>
+        </a>
         <div class='right_part t_0_75'>
             <div class="card_icon"><img src='/assets/card.svg'></div>
             <div class="avatar"></div>
