@@ -8,10 +8,7 @@ error_reporting(E_ALL);
 define("REDSEAM_API", "https://api.redseam.redberryinternship.ge/api");
 
 
-# General functions
-function get_products(){
-
-}
+# Routing and validating inputs 
 
 
 # Basic Curl Requests Functions 

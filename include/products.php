@@ -1,6 +1,7 @@
-<?php 
+<?php  
 
-    $products_url = '/products?page=2&sort=-price';
+    $products_url = $request;
+    echo $products_url;
     $products = json_decode( make_get_request( $products_url ), false ); 
 
 ?>
@@ -36,7 +37,9 @@
 
     <div class='meta'>
           <?php foreach($products->meta->links as $l) { ?>
-              <div <?=($l->active?'class="active"':'')?>><?=$l->label?></div>
+            <a <?=($l->active?'class="active"':'')?> href="<?=str_replace(REDSEAM_API,"",$l->url)?> ">
+                    <?=$l->label?>
+            </a>
         <?php } ?>
     </div>
 

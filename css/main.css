@@ -216,12 +216,22 @@ footer {
         gap: 1rem;
     }
 
-    .meta div {
-        width: 2rem;
+    .meta a {
+        white-space: nowrap;
+        min-width: 2rem;
+        border: 1px #ff400000 solid;
     }
 
-    .meta div.active, .meta div:hover {
+    .meta a.active, .meta a:hover {
         color: #FF4000;    
         border: 1px #FF4000 solid; 
         border-radius: 5px;
+    }
+
+
+    /* page not found */
+
+    .page_not_found {
+        text-align: center;
+        padding: 100px;
     }
