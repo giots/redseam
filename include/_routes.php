@@ -15,8 +15,8 @@ switch ($request_action) {
         break;
 
     case preg_match('/^\/products\/[0-9]+$/', $request_action)==1:     
-        $request = "/products";
-        $file='products';
+        $request = $request_action;
+        $file='product_page';
         break;
 
     case '/login':                                                  

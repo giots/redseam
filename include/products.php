@@ -20,9 +20,10 @@
     $f_String = '';
     foreach( $filters_data as $k=>$f ) {
         $f_String .= "&".$k.'='.$f;
-    }
+    }  
+    if ( !empty($f_String)) $f_String = "?".$f_String; 
 
-    $products = json_decode( make_get_request( $products_url."?".$f_String ), false ); 
+    $products = json_decode( make_get_request( $products_url.$f_String ), false ); 
 
 ?>
 
@@ -43,17 +44,16 @@
     <div class='products_list'>
         <?php foreach($products->data as $p) { ?>
             <div class='product'>
-                <div class='cover_image' style='background-image:url(<?=$p->cover_image ?>)'> </div>
-                <div class='product_list_description'>
-                    <div><?=$p->name;?></div>
-                    <div>$ <?=$p->price;?></div>
-                </div>
+                <a href="/products/<?=$p->id?>">
+                    <div class='cover_image' style='background-image:url(<?=$p->cover_image ?>)'> </div>
+                    <div class='product_list_description'>
+                        <div><?=$p->name;?></div>
+                        <div>$ <?=$p->price;?></div>
+                    </div>
+                </a>
             </div>
         <?php } ?>
     </div>
-
-
-
 
     <div class='meta'>
           <?php foreach($products->meta->links as $l) { 

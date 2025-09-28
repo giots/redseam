@@ -58,7 +58,7 @@ table {
 
 
 .t_0_75 {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
 }
 
 .gap_25 {
@@ -210,6 +210,10 @@ footer {
         gap: 2px;
     }
 
+    .product a {
+        text-decoration: none;
+    }
+
 
     .meta {
         display: flex;
@@ -244,3 +248,103 @@ footer {
         text-align: center;
         padding: 100px;
     }
+
+
+    /* product page */
+    .product_section {
+        padding-top: 30px;
+    }
+
+    .product {
+        margin-top: 50px;
+        align-items: flex-start !important;
+    }
+
+
+    .product_thumbnails .thumbnail_image {
+        width: 120px;
+        height: 160px;
+        background-size: cover;
+        border: 1px #efefef solid;
+        margin: 0px 0 10px;
+    }
+
+    .product .main_photo {
+        border-radius: 10px; 
+        width: 700px;
+        height: 930px;
+        background-size: cover;
+        border: 1px #efefef solid;
+    }
+
+    .product .product_info {
+        width: 700px;
+        height: auto;
+        text-align: left;
+    }
+
+    .product .product_info .product_title,
+    .product .product_info .product_price 
+     { 
+        height: 3rem; 
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 1.6rem;
+    }
+   
+    .product .product_info .product_features_title { 
+        margin-top: 3rem;
+        font-size: 1rem;
+    }
+
+    .colors_available, .sizes_available {
+        margin-top: 1rem;
+        display:flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 13px;
+
+    }
+    .color_circle  {
+        width: 38px; 
+        height: 38px;
+        border-radius: 50%;
+        padding: 5px;
+        border: 1px solid  #efefef;
+    }
+
+    .sizes_available {
+        gap: 10px;
+    }
+    .size_quad {
+        text-align: center;
+        width: 70px; 
+        height: 42px;
+        padding: 8px;
+        border-radius: 10px;
+        border: 1px solid  #E1DFE1;
+        white-space: nowrap;
+    }
+
+    .size_quad.active { 
+        border-color: #10151F;
+        background-color:  #F8F6F7;
+    }
+
+    .product_detailes img {
+        width: 100px;
+    }
+
+    .add_to_Cart_button {
+        width: 100%;
+        border-radius: 10px;
+        background-color: #FF4000;
+        color: white;
+        margin: 2rem 0;
+        text-align: center;
+        padding: 20px; 
+        font-size: 1.125rem;
+    }
+
+    .add_to_Cart_button svg{ fill: rgb(255, 255, 255); color: white; }
